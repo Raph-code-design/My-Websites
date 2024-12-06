@@ -1,0 +1,48 @@
+/* General Print Settings */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+}
+
+header,
+footer,
+.print-button {
+    display: none;
+    /* Hide navigation and print button */
+}
+
+.resume-section {
+    padding: 0;
+}
+
+.resume-content {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    border: none;
+    box-shadow: none;
+}
+
+h1,
+h2 {
+    color: black;
+}
+
+/* Adjust layout for printing */
+@page {
+    margin: 1in;
+}
+
+.resume-content ul {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.resume-content img {
+    max-width: 120px;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    margin: 0 auto 1rem;
+}

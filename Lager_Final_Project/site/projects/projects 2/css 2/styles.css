@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background-color: #004d61;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li :hover {
+    color: #cccf12
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 77, 97, 0.8), rgba(0, 77, 97, 0.8)), url('../images/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.2s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    width: 60%;
+    line-height: 1.5;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #d8eb2c;
+    color: #004d61;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #7bdf09;
+}
+
+/* Featured Destination */
+.featured-destination {
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    margin-top: -100px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.featured-destination h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004d61;
+}
+
+.featured-destination img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.featured-destination p {
+    color: #cccf12;
+    font-size: 1.1rem;
+}
+
+
+.travel-article {
+    background-color: #fefefe;
+    margin: 40px auto;
+    padding: 40px;
+    width: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.travel-article h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004d61;
+}
+
+.travel-article p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004d61;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

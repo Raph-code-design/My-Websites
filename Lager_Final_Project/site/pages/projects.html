@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/site/css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/site/index.html">Home</a></li>
+                <li><a href="/site/pages/about.html">About Me</a></li>
+                <li><a href="/site/pages/projects.html">Projects</a></li>
+                <li><a href="/site/pages/resume.html">Resume</a></li>
+                <li><a href="/site/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="projects">
+            <h1>My Projects</h1>
+            <p>These are initial projects and I will add more as my Academic Career Progresses.</p>
+            <label for="filter">Filter by Technology:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="web-design">Web Design</option>
+                <option value="javascript">JavaScript</option>
+                <option value="responsive-design">Responsive Design</option>
+            </select>
+            <div class="projects-cards" id="projectCards">
+                <div class="card" data-category="web-design">
+                    <h2>Portfolio Website</h2>
+                    <p>My first portfolio website.</p>
+                    <a href="/site/projects/project 1/index.html" target="_blank">View Project</a>
+                </div>
+                <div class="card" data-category="responsive-design">
+                    <h2>Responsive Travel Website</h2>
+                    <p>A website to help you decide where your next vacation should be</p>
+                    <a href="/site/projects/projects 2/index.html" target="_blank">View Project</a>
+                </div>
+                <div class="card" data-category="javascript">
+                    <h2>Movie Tracker Website</h2>
+                    <p>This website allows you to track the films you have watched and to tell your friends what is
+                        good!</p>
+                    <a href="/site/projects/projects 3/index.html" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+        <section class="timeline">
+            <h2>My Journey</h2>
+            <div class="timeline-container">
+                <div class="timeline-event">
+                    <div class="timeline-date">2024-08</div>
+                    <div class="timeline-content">
+                        <h3>Started Web Development Class</h3>
+                        <p>Embarked on my journey to learn HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">2024-09</div>
+                    <div class="timeline-content">
+                        <h3>Project 1: Portfolio Website</h3>
+                        <p>Created my first responsive and interactive portfolio website.</p>
+                        <a href="/site/projects/project 1/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">2024-10</div>
+                    <div class="timeline-content">
+                        <h3>Project 2: Responsive Travel Website</h3>
+                        <p>Built a travel website for a project in my Web Design Class</p>
+                        <a href="/site/projects/projects 2/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">2024-11</div>
+                    <div class="timeline-content">
+                        <h3>Project 3: Movie Tracker Website</h3>
+                        <p>Developed an interactive website that tracks what movies you watched recently and what movies
+                            you plan on watching.</p>
+                        <a href="/site/projects/projects 3/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="github-link">
+            <h2>Check Out My GitHub</h2>
+            <p>Explore more of my projects on Github!</p>
+            <a href="https://github.com/Raph-code-design/My-Websites" target="_blank" class="github-btn">
+                <img src="/site/img/OIP.jpg" alt="GitHub Icon" class="github-icon">
+                Visit My GitHub
+            </a>
+        </section>
+    </main>
+    <script defer src="/site/js/projects.js"></script>
+</body>
+
+</html>

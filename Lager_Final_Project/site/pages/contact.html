@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/site/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/site/index.html">Home</a></li>
+                <li><a href="/site/pages/about.html">About Me</a></li>
+                <li><a href="/site/pages/projects.html">Projects</a></li>
+                <li><a href="/site/pages/resume.html">Resume</a></li>
+                <li><a href="/site/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Contact Me</h1>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" required>
+
+                <label for="qualities">What qualities do you look for?</label>
+                <textarea id="qualities" name="qualities"></textarea>
+
+                <label for="date">Date of contact:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+<script defer src="/site/js/script.js"></script>
+
+</html>

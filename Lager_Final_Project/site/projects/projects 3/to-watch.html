@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Watch List</title>
+    <link rel="stylesheet" href="/site/projects/projects 3/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar for linking pages -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/site/projects/projects 3/index.html">Home</a></li> <!-- Link to Home -->
+                <li><a href="/site/projects/projects 3/watched.html">Watched Movies</a></li>
+                <!-- Link to Watched page -->
+                <li><a href="/site/projects/projects 3/to-watch.html">To-Watch List</a></li>
+                <!-- Link to To-Watch page -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- To-Watch List Section with Placeholder Items -->
+    <section>
+        <h2>To-Watch Movies</h2>
+
+        <!-- Button to open the modal for adding a new movie -->
+        <button id="open-modal-btn">Add Movie</button>
+
+
+
+        <!-- Grid container for the list of movies to watch -->
+        <div class="movie-grid" id="to-watch-list">
+
+            <!-- Modal Popup for adding movie details -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span> <!-- Close button -->
+                    <h2>Add a Movie</h2>
+                    <form id="movie-form">
+                        <label for="title">Movie Title:</label>
+                        <input type="text" id="title" name="title" required>
+
+                        <label for="rating">Rating (out of 10):</label>
+                        <input type="number" id="rating" name="rating" min="1" max="10" required>
+
+                        <label for="genre">Genre:</label>
+                        <input type="text" id="genre" name="genre">
+
+                        <button type="submit">Add Movie</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Placeholder Item 1 -->
+            <article class="movie-item">
+                <img src="/site/projects/projects 3/Images 3/Sleepy_hollow_ver2.jpg"
+                    alt="Placeholder Image for Sleepy Hollow">
+                <h3>Sleepy Hollow (1999)</h3>
+                <p>Genre: Horror</p>
+            </article>
+
+            <!-- Placeholder Item 2 -->
+            <article class="movie-item">
+                <img src="/site/projects/projects 3/Images 3/MV5BNGViZWZmM2EtNGYzZi00ZDAyLTk3ODMtNzIyZTBjN2Y1NmM1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg"
+                    alt="Placeholder Image for The Thing">
+                <h3>The Thing (1982)</h3>
+                <p>Genre: Sci-Fi, Horror</p>
+            </article>
+
+            <!-- Placeholder Item 3 -->
+            <article class="movie-item">
+                <img src="/site/projects/projects 3/Images 3/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg"
+                    alt="Placeholder Image for 12 Angry Men">
+                <h3>12 Angry Men (1957)</h3>
+                <p>Genre: Psychological Drama,</p>
+            </article>
+
+            <!-- Placeholder Item 4 -->
+            <article class="movie-item">
+                <img src="/site/projects/projects 3/Images 3/b55fba63df66a859def1251dc54add15.jpg"
+                    alt="Placeholder Image for Crimson Peak">
+                <h3>Crimson Peak (2015)</h3>
+                <p>Genre: Horror, Drama, Thriller, Romance</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer for all pages -->
+    <footer>
+        <p>&copy; 2024 Movie Tracker</p>
+    </footer>
+
+    <script src="/site/projects/projects 3/app.js"></script> <!-- Link to JavaScript for modal and dynamic behavior -->
+</body>
+
+</html>
