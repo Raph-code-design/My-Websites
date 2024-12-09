@@ -13,17 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.hero').appendChild(greeting);
 });
 
+
 document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide'); // Selects all slides in the carousel.
+    let currentSlide = 0; // Tracks the index of the current slide.
+
 
     function showNextSlide() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
+        slides[currentSlide].classList.remove('active'); // Removes 'active' class from the current slide.
+        currentSlide = (currentSlide + 1) % slides.length; // Updates the index to the next slide.
+        slides[currentSlide].classList.add('active'); // Adds 'active' class to the new slide.
     }
 
-    setInterval(showNextSlide, 3000);
+    setInterval(showNextSlide, 3000); // Automatically changes slides every 3 seconds.
 });
 
 window.addEventListener('beforeprint', () => {

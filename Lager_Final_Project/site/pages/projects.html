@@ -1,53 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Specifies the HTML version (HTML5). -->
+<html lang="en"> <!-- Sets the language for the document. -->
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Defines the character encoding (UTF-8). -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="/site/css/styles.css">
-
+    <!-- Ensures responsive design on mobile devices. -->
+    <title>Projects</title> <!-- Title of the webpage, displayed in the browser tab. -->
+    <link rel="stylesheet" href="/site/css/styles.css"> <!-- Links to the main CSS file for styling. -->
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/site/index.html">Home</a></li>
-                <li><a href="/site/pages/about.html">About Me</a></li>
-                <li><a href="/site/pages/projects.html">Projects</a></li>
-                <li><a href="/site/pages/resume.html">Resume</a></li>
-                <li><a href="/site/pages/contact.html">Contact</a></li>
+    <header> <!-- Represents the header section of the page, typically for navigation. -->
+        <nav> <!-- Navigation bar containing links to other pages. -->
+            <ul> <!-- Unordered list for navigation links. -->
+                <li><a href="/site/index.html">Home</a></li> <!-- Link to the Home page. -->
+                <li><a href="/site/pages/about.html">About Me</a></li> <!-- Link to the About Me page. -->
+                <li><a href="/site/pages/projects.html">Projects</a></li> <!-- Link to the Projects page. -->
+                <li><a href="/site/pages/resume.html">Resume</a></li> <!-- Link to the Resume page. -->
+                <li><a href="/site/pages/contact.html">Contact</a></li> <!-- Link to the Contact page. -->
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="projects">
-            <h1>My Projects</h1>
-            <p>These are initial projects and I will add more as my Academic Career Progresses.</p>
-            <label for="filter">Filter by Technology:</label>
-            <select id="filter">
-                <option value="all">All</option>
-                <option value="web-design">Web Design</option>
-                <option value="javascript">JavaScript</option>
+    <main> <!-- Main content of the webpage. -->
+        <section> <!-- Section displaying the projects and the sorting dropdown. -->
+            <h1>My Projects</h1> <!-- Main heading of the section. -->
+            <label for="filter">Sort by Technology:</label> <!-- Label for the filter dropdown. -->
+            <select id="filter"> <!-- Dropdown menu for selecting a technology category. -->
+                <option value="all">All</option> <!-- Option to show all projects. -->
+                <option value="web-design">Web Design</option> <!-- Option for Web Design projects. -->
                 <option value="responsive-design">Responsive Design</option>
+                <!-- Option for Responsive Design projects. -->
+                <option value="javascript">JavaScript</option> <!-- Option for JavaScript projects. -->
             </select>
-            <div class="projects-cards" id="projectCards">
-                <div class="card" data-category="web-design">
-                    <h2>Portfolio Website</h2>
-                    <p>My first portfolio website.</p>
-                    <a href="/site/projects/project 1/index.html" target="_blank">View Project</a>
+
+            <div class="project-cards" id="projectCards"> <!-- Container for the project cards. -->
+                <div class="card" data-category="web-design"> <!-- A project card for Web Design. -->
+                    <h2>Portfolio Website</h2> <!-- Title of the project. -->
+                    <p>A responsive and interactive personal portfolio website.</p> <!-- Description of the project. -->
                 </div>
-                <div class="card" data-category="responsive-design">
-                    <h2>Responsive Travel Website</h2>
-                    <p>A website to help you decide where your next vacation should be</p>
-                    <a href="/site/projects/projects 2/index.html" target="_blank">View Project</a>
+                <div class="card" data-category="responsive-design"> <!-- A project card for Responsive Design. -->
+                    <h2>Responsive Travel Website</h2> <!-- Title of the project. -->
+                    <p>A travel website featuring responsive layouts and modern design.</p>
+                    <!-- Description of the project. -->
                 </div>
-                <div class="card" data-category="javascript">
-                    <h2>Movie Tracker Website</h2>
-                    <p>This website allows you to track the films you have watched and to tell your friends what is
-                        good!</p>
-                    <a href="/site/projects/projects 3/index.html" target="_blank">View Project</a>
+                <div class="card" data-category="javascript"> <!-- A project card for JavaScript. -->
+                    <h2>Movie Tracker Website</h2> <!-- Title of the project. -->
+                    <p>An application to track and review movies using JavaScript.</p>
+                    <!-- Description of the project. -->
                 </div>
             </div>
         </section>
@@ -97,7 +96,11 @@
             </a>
         </section>
     </main>
-    <script defer src="/site/js/projects.js"></script>
+    </main>
+    <footer> <!-- Footer section of the webpage. -->
+        <p>&copy; 2024 My Portfolio</p> <!-- Copyright notice. -->
+    </footer>
+    <script defer src="/site/js/projects.js"></script> <!-- JavaScript file for project filtering interactivity. -->
 </body>
 
 </html>

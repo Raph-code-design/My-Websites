@@ -1,7 +1,7 @@
 document.getElementById('contactForm').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
+    e.preventDefault(); // Prevents the form from submitting normally.
+    const name = document.getElementById('name').value; // Gets the value of the name input.
+    const email = document.getElementById('email').value; // Gets the value of the email input.
 
     if (name && email) {
         alert('Thank you for your submission!');
@@ -12,10 +12,11 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
 
 document.getElementById('contactForm').addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const company = document.getElementById('company').value || 'N/A';
-    const qualities = document.getElementById('qualities').value || 'N/A';
+    const name = document.getElementById('name').value; // Gets the value of the name input.
+    const email = document.getElementById('email').value; // Gets the value of the email inpu
+    const company = document.getElementById('company').value || 'N/A'; // Gets the value of the company input or defaults to 'N/A'.
+    const qualities = document.getElementById('qualities').value || 'N/A'; // Gets the value of the qualities textarea or defaults to 'N/A'.
+
 
     const summary = `
       Thank you, ${name}! Here are the details you submitted:
@@ -24,5 +25,5 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
       - Qualities: ${qualities}
     `;
 
-    alert(summary);
+    alert(summary); // Displays a summary of the user's input in an alert box.
 });

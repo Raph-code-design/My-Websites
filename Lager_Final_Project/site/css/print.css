@@ -1,7 +1,9 @@
 /* General Print Settings */
 body {
     font-family: Arial, sans-serif;
+    /* Ensures readable font. */
     line-height: 1.6;
+    /* Maintains consistent line spacing. */
     color: black;
 }
 
@@ -9,7 +11,7 @@ header,
 footer,
 .print-button {
     display: none;
-    /* Hide navigation and print button */
+    /* Hides header, footer, and print button in print view */
 }
 
 .resume-section {
@@ -18,8 +20,11 @@ footer,
 
 .resume-content {
     width: 100%;
+    /* Ensures content uses full page width. */
     padding: 1rem;
+    /* Adds space around the content. */
     margin: 0 auto;
+    /* Centers the content. */
     border: none;
     box-shadow: none;
 }

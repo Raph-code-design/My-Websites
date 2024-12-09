@@ -1,52 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Specifies the HTML version (HTML5). -->
+<html lang="en"> <!-- Sets the language for the document. -->
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Defines the character encoding (UTF-8). -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="/site/css/styles.css">
+    <!-- Ensures responsive design on mobile devices. -->
+    <title>Contact</title> <!-- Title of the webpage, displayed in the browser tab. -->
+    <link rel="stylesheet" href="/site/css/styles.css"> <!-- Links to the main CSS file for styling. -->
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/site/index.html">Home</a></li>
-                <li><a href="/site/pages/about.html">About Me</a></li>
-                <li><a href="/site/pages/projects.html">Projects</a></li>
-                <li><a href="/site/pages/resume.html">Resume</a></li>
-                <li><a href="/site/pages/contact.html">Contact</a></li>
+    <header> <!-- Represents the header section of the page, typically for navigation. -->
+        <nav> <!-- Navigation bar containing links to other pages. -->
+            <ul> <!-- Unordered list for navigation links. -->
+                <li><a href="/site/index.html">Home</a></li> <!-- Link to the Home page. -->
+                <li><a href="/site/pages/about.html">About Me</a></li> <!-- Link to the About Me page. -->
+                <li><a href="/site/pages/projects.html">Projects</a></li> <!-- Link to the Projects page. -->
+                <li><a href="/site/pages/resume.html">Resume</a></li> <!-- Link to the Resume page. -->
+                <li><a href="/site/pages/contact.html">Contact</a></li> <!-- Link to the Contact page. -->
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Contact Me</h1>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+    <main> <!-- Main content of the webpage. -->
+        <section> <!-- Section containing the contact form. -->
+            <h1>Contact Me</h1> <!-- Main heading of the section. -->
+            <form id="contactForm"> <!-- Contact form with various input fields. -->
+                <label for="name">Name:</label> <!-- Label for name input. -->
+                <input type="text" id="name" name="name" required> <!-- Input field for name (required). -->
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label> <!-- Label for email input. -->
+                <input type="email" id="email" name="email" required> <!-- Input field for email (required). -->
 
-                <label for="company">Company:</label>
-                <input type="text" id="company" name="company" required>
+                <label for="company">Company:</label> <!-- Label for company input. -->
+                <input type="text" id="company" name="company"> <!-- Optional input field for company name. -->
 
-                <label for="qualities">What qualities do you look for?</label>
-                <textarea id="qualities" name="qualities"></textarea>
+                <label for="qualities">What qualities do you look for?</label> <!-- Label for textarea input. -->
+                <textarea id="qualities" name="qualities"></textarea> <!-- Text area for user to describe qualities. -->
 
-                <label for="date">Date of contact:</label>
-                <input type="date" id="date" name="date" required>
+                <label for="date">Date of contact:</label> <!-- Label for date input. -->
+                <input type="date" id="date" name="date" required> <!-- Date input for contact date (required). -->
 
-                <button type="submit">Submit</button>
+                <button type="submit">Submit</button> <!-- Button to submit the form. -->
             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 My Portfolio</p>
+    <footer> <!-- Footer section of the webpage. -->
+        <p>&copy; 2024 My Portfolio</p> <!-- Copyright notice. -->
     </footer>
+    <script defer src="/site/js/contact.js"></script> <!-- JavaScript file for form interactivity. -->
 </body>
-<script defer src="/site/js/script.js"></script>
 
 </html>
